@@ -1,0 +1,15 @@
+
+
+CREATE COMPUTE MODULE CollectorFlow_HandleExpired
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.Properties = InputProperties;
+		SET OutputRoot.JSON.Data.result = 'expired';
+				
+		-- The Collector node puts the matching value in the LE but does not preserve the HTTP reply
+		-- identifier in place, so we copy it in here. 
+		SET OutputLocalEnvironment.Destination.HTTP.RequestIdentifier = CAST(InputLocalEnvironment.Wildcard.WildcardMatch AS BLOB);
+
+		RETURN TRUE;
+	END;
+END MODULE;

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageAssembly iib:parser="GENERICROOT" xmlns:iib="http://com.ibm.iib/lt/1.0">
+   <version xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="INTEGER">1</version>
+   <checkpoint>
+      <messageId xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">000081E0-63A4DDF9-00000001</messageId>
+      <propagationCount xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="INTEGER">0</propagationCount>
+      <nodeCallDepth xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="INTEGER">1</nodeCallDepth>
+      <timestamp xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="TIMESTAMP">2022-12-22 22:45:13.505</timestamp>
+      <source>
+         <name xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">MQ Input2</name>
+         <identifier xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">AggregationFlow#FCMComposite_1_8</identifier>
+         <type xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">ComIbmMQInputNode</type>
+         <terminal xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">out</terminal>
+         <nodePath>
+            <application xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">SingleFlowApplication</application>
+            <messageFlow xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">AggregationFlow</messageFlow>
+            <node xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">MQ Input2</node>
+         </nodePath>
+         <inputNode xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="BOOLEAN">TRUE</inputNode>
+      </source>
+      <target>
+         <name xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">Aggregate Reply</name>
+         <identifier xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">AggregationFlow#FCMComposite_1_2</identifier>
+         <type xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">ComIbmAggregateReplyNode</type>
+         <terminal xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">in</terminal>
+         <nodePath>
+            <application xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">SingleFlowApplication</application>
+            <messageFlow xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">AggregationFlow</messageFlow>
+            <node xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">Aggregate Reply</node>
+         </nodePath>
+      </target>
+   </checkpoint>
+   <environment/>
+   <localEnvironment/>
+   <exceptionList/>
+   <message xmlns:iib="http://com.ibm.iib/lt/1.0" iib:parser="MQROOT">
+      <Properties iib:parser="MQPROPERTYPARSER">
+         <MessageSet iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <MessageType iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <MessageFormat iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <Encoding iib:valueType="INTEGER">546</Encoding>
+         <CodedCharSetId iib:valueType="INTEGER">1208</CodedCharSetId>
+         <Transactional iib:valueType="BOOLEAN">TRUE</Transactional>
+         <Persistence iib:valueType="BOOLEAN">FALSE</Persistence>
+         <CreationTime iib:valueType="GMTTIMESTAMP">2022-12-22 22:45:13.500</CreationTime>
+         <ExpirationTime iib:valueType="INTEGER">-1</ExpirationTime>
+         <Priority iib:valueType="INTEGER">0</Priority>
+         <ReplyIdentifier iib:valueType="BLOB">414d51207367514d2020202020202020927ca46303a20040</ReplyIdentifier>
+         <ReplyProtocol iib:valueType="CHARACTER">MQ</ReplyProtocol>
+         <Topic iib:elementType="0x03000000"/>
+         <ContentType iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentitySourceType iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentitySourceToken iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentitySourcePassword iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentitySourceIssuedBy iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentityMappedType iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentityMappedToken iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentityMappedPassword iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentityMappedIssuedBy iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+      </Properties>
+      <MQMD iib:parser="MQHMD">
+         <SourceQueue iib:valueType="CHARACTER">GATHER.IN.2</SourceQueue>
+         <Transactional iib:valueType="BOOLEAN">TRUE</Transactional>
+         <Encoding iib:valueType="INTEGER">546</Encoding>
+         <CodedCharSetId iib:valueType="INTEGER">1208</CodedCharSetId>
+         <Format iib:valueType="CHARACTER">        </Format>
+         <Version iib:valueType="INTEGER">2</Version>
+         <Report iib:valueType="INTEGER">0</Report>
+         <MsgType iib:valueType="INTEGER">2</MsgType>
+         <Expiry iib:valueType="INTEGER">-1</Expiry>
+         <Feedback iib:valueType="INTEGER">0</Feedback>
+         <Priority iib:valueType="INTEGER">0</Priority>
+         <Persistence iib:valueType="INTEGER">0</Persistence>
+         <MsgId iib:valueType="BLOB">414d51207367514d2020202020202020927ca4632b2e0040</MsgId>
+         <CorrelId iib:valueType="BLOB">414d51207367514d2020202020202020927ca46303a20040</CorrelId>
+         <BackoutCount iib:valueType="INTEGER">0</BackoutCount>
+         <ReplyToQ iib:valueType="CHARACTER">                                                </ReplyToQ>
+         <ReplyToQMgr iib:valueType="CHARACTER">sgQM                                            </ReplyToQMgr>
+         <UserIdentifier iib:valueType="CHARACTER">684084897   </UserIdentifier>
+         <AccountingToken iib:valueType="BLOB">1601050100000089e113888173454986bf002ec9e31cae00000000000000000c</AccountingToken>
+         <ApplIdentityData iib:valueType="CHARACTER">                                </ApplIdentityData>
+         <PutApplType iib:valueType="INTEGER">11</PutApplType>
+         <PutApplName iib:valueType="CHARACTER">er\bin\IntegrationServer.exe</PutApplName>
+         <PutDate iib:valueType="DATE">2022-12-22</PutDate>
+         <PutTime iib:valueType="GMTTIME">22:45:13.500</PutTime>
+         <ApplOriginData iib:valueType="CHARACTER">    </ApplOriginData>
+         <GroupId iib:valueType="BLOB">000000000000000000000000000000000000000000000000</GroupId>
+         <MsgSeqNumber iib:valueType="INTEGER">1</MsgSeqNumber>
+         <Offset iib:valueType="INTEGER">0</Offset>
+         <MsgFlags iib:valueType="INTEGER">0</MsgFlags>
+         <OriginalLength iib:valueType="INTEGER">-1</OriginalLength>
+      </MQMD>
+      <JSON iib:parser="json">
+         <Data>
+            <backend>
+               <flow iib:valueType="CHARACTER">two</flow>
+            </backend>
+            <correlation>
+               <http iib:valueType="CHARACTER">RVZIVAAAAAAAAAAAmRYDPIRnAAAAAAAA</http>
+            </correlation>
+         </Data>
+      </JSON>
+   </message>
+</MessageAssembly>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageAssembly iib:parser="GENERICROOT" xmlns:iib="http://com.ibm.iib/lt/1.0">
+   <version xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="INTEGER">1</version>
+   <checkpoint>
+      <messageId xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">00003344-63A4992A-00000001</messageId>
+      <propagationCount xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="INTEGER">2</propagationCount>
+      <nodeCallDepth xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="INTEGER">3</nodeCallDepth>
+      <timestamp xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="TIMESTAMP">2022-12-22 17:51:38.418999</timestamp>
+      <source>
+         <name xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">Complete</name>
+         <identifier xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">AggregationFlow#FCMComposite_1_13</identifier>
+         <type xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">ComIbmComputeNode</type>
+         <terminal xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">out</terminal>
+         <nodePath>
+            <application xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">SingleFlowApplication</application>
+            <messageFlow xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">AggregationFlow</messageFlow>
+            <node xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">Complete</node>
+         </nodePath>
+         <inputNode xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="BOOLEAN">FALSE</inputNode>
+      </source>
+      <target>
+         <name xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">HTTP Reply</name>
+         <identifier xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">AggregationFlow#FCMComposite_1_6</identifier>
+         <type xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">ComIbmWSReplyNode</type>
+         <terminal xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">in</terminal>
+         <nodePath>
+            <application xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">SingleFlowApplication</application>
+            <messageFlow xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">AggregationFlow</messageFlow>
+            <node xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">HTTP Reply</node>
+         </nodePath>
+      </target>
+   </checkpoint>
+   <environment/>
+   <localEnvironment xmlns:iib="http://com.ibm.iib/lt/1.0" iib:parser="MQROOT">
+      <Destination>
+         <HTTP>
+            <RequestIdentifier iib:valueType="BLOB">455648540000000000000000ac4df63a4059000000000000</RequestIdentifier>
+         </HTTP>
+      </Destination>
+   </localEnvironment>
+   <exceptionList/>
+   <message xmlns:iib="http://com.ibm.iib/lt/1.0" iib:parser="MQROOT">
+      <Properties iib:parser="MQPROPERTYPARSER">
+         <MessageSet iib:elementType="0x03000000"/>
+         <MessageType iib:elementType="0x03000000"/>
+         <MessageFormat iib:elementType="0x03000000"/>
+         <Encoding iib:elementType="0x03000000"/>
+         <CodedCharSetId iib:elementType="0x03000000"/>
+         <Transactional iib:elementType="0x03000000"/>
+         <Persistence iib:elementType="0x03000000"/>
+         <CreationTime iib:elementType="0x03000000"/>
+         <ExpirationTime iib:elementType="0x03000000"/>
+         <Priority iib:elementType="0x03000000"/>
+         <ReplyIdentifier iib:elementType="0x03000000"/>
+         <ReplyProtocol iib:valueType="CHARACTER">MQ</ReplyProtocol>
+         <Topic iib:elementType="0x03000000"/>
+         <ContentType iib:elementType="0x03000000"/>
+         <IdentitySourceType iib:elementType="0x03000000"/>
+         <IdentitySourceToken iib:elementType="0x03000000"/>
+         <IdentitySourcePassword iib:elementType="0x03000000"/>
+         <IdentitySourceIssuedBy iib:elementType="0x03000000"/>
+         <IdentityMappedType iib:elementType="0x03000000"/>
+         <IdentityMappedToken iib:elementType="0x03000000"/>
+         <IdentityMappedPassword iib:elementType="0x03000000"/>
+         <IdentityMappedIssuedBy iib:elementType="0x03000000"/>
+      </Properties>
+      <JSON iib:parser="json">
+         <Data>
+            <reply iib:valueType="CHARACTER">success</reply>
+         </Data>
+      </JSON>
+   </message>
+</MessageAssembly>
