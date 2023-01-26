@@ -57,14 +57,18 @@ public class AggregationFlow_EndToEndTestWithMocks
 
 
 		// Validate the results from the flow execution
-        // We will now pick up the message that is propagated into the "HttpReply" node and validate it
-		TestMessageAssembly replyMessageAssembly = mqOutput2Spy.receivedMessageAssembly("in", 1);
-		replyMessageAssembly = mqOutput1Spy.receivedMessageAssembly("in", 1);
-
-        // Assert that the actual message tree matches the expected message tree
+        // We will now pick up the message that is propagated into the first MQOutput node and validate it
+		TestMessageAssembly replyMessageAssembly = mqOutput1Spy.receivedMessageAssembly("in", 1);
 		TestMessageAssembly expectedMessageAssembly = new TestMessageAssembly();
 		expectedMessageAssembly.buildFromRecordedMessageAssembly(Thread.currentThread().getContextClassLoader()
 				.getResourceAsStream("/AggregationFlow_00007DD8_63A4DDF9_00000001_5.mxml"));
+        assertThat(replyMessageAssembly, equalsMessage(expectedMessageAssembly));
+
+        // Validate the second MQOutput node message
+        replyMessageAssembly = mqOutput2Spy.receivedMessageAssembly("in", 1);
+		expectedMessageAssembly = new TestMessageAssembly();
+		expectedMessageAssembly.buildFromRecordedMessageAssembly(Thread.currentThread().getContextClassLoader()
+				.getResourceAsStream("/AggregationFlow_00007DD8_63A4DDF9_00000001_2.mxml"));
         assertThat(replyMessageAssembly, equalsMessage(expectedMessageAssembly));
 	}
 	
@@ -83,12 +87,11 @@ public class AggregationFlow_EndToEndTestWithMocks
 
 		httpReplySpy.setStopAtInputTerminal("in");
 		
-		// Now call propagate on the "out" terminal of the HTTP Input node.
-		// This takes the place of an actual HTTP message: we simple hand the node
+		// Now call propagate on the "out" terminal of the Aggregate Reply node.
+		// This takes the place of actual aggregation: we simple hand the node
 		// the message assembly and tell it to propagate that as if it came from an
 		// actual client. This line is where the flow is actually run.
 		aggregateReplySpy.propagate(inputMessageAssembly, "out");
-
 
 		// Validate the results from the flow execution
         // We will now pick up the message that is propagated into the "HttpReply" node and validate it

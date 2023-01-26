@@ -10,7 +10,7 @@
       <nodes xmi:type="ComIbmAggregateControl.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="141,70" aggregateName="singleFlow" timeoutInterval="30" timeoutLocation="$LocalEnvironment/Aggregation/Timeout">
         <translation xmi:type="utility:ConstantString" string="Aggregate Control"/>
       </nodes>
-      <nodes xmi:type="ComIbmAggregateReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="286,262" aggregateName="singleFlow" unsolicitedTimeout="5" transactionMode="true">
+      <nodes xmi:type="ComIbmAggregateReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="286,262" aggregateName="singleFlow" unsolicitedTimeout="10" transactionMode="true">
         <translation xmi:type="utility:ConstantString" string="Aggregate Reply"/>
       </nodes>
       <nodes xmi:type="ComIbmAggregateRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="691,41" folderName="one">
