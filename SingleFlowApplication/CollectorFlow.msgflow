@@ -10,16 +10,16 @@
       <nodes xmi:type="ComIbmWSInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="28,206" URLSpecifier="/collectorFlow">
         <translation xmi:type="utility:ConstantString" string="HTTP Input"/>
       </nodes>
-      <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="948,186">
+      <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="724,146">
         <translation xmi:type="utility:ConstantString" string="HTTP Reply"/>
       </nodes>
-      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="175,60" computeExpression="esql://routine/#CollectorFlow_CreateRequestOne.Main">
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="129,66" computeExpression="esql://routine/#CollectorFlow_CreateRequestOne.Main">
         <translation xmi:type="utility:ConstantString" string="CreateRequestOne"/>
       </nodes>
-      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="175,140" computeExpression="esql://routine/#CollectorFlow_CreateRequestTwo.Main">
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="130,142" computeExpression="esql://routine/#CollectorFlow_CreateRequestTwo.Main">
         <translation xmi:type="utility:ConstantString" string="CreateRequestTwo"/>
       </nodes>
-      <nodes xmi:type="ComIbmCollector.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="588,189" collectionName="httpRequests" collectionExpiry="30">
+      <nodes xmi:type="ComIbmCollector.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="473,189" collectionName="httpRequests" collectionExpiry="30">
         <inTerminals terminalNodeID="replyOne" dynamic="true" label="replyOne"/>
         <inTerminals terminalNodeID="replyTwo" dynamic="true" label="replyTwo"/>
         <inTerminals terminalNodeID="originalMessage" dynamic="true" label="originalMessage"/>
@@ -28,25 +28,25 @@
         <eventHandlerPropertyTable terminal="replyTwo" quantity="1" correlationPath="$LocalEnvironment/Destination/HTTP/RequestIdentifier" correlationPattern=""/>
         <eventHandlerPropertyTable terminal="originalMessage" quantity="1" correlationPath="$LocalEnvironment/Destination/HTTP/RequestIdentifier" correlationPattern=""/>
       </nodes>
-      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_6" location="761,145" computeExpression="esql://routine/#CollectorFlow_CreateReply.Main" computeMode="destinationAndMessage">
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_6" location="588,105" computeExpression="esql://routine/#CollectorFlow_CreateReply.Main" computeMode="destinationAndMessage">
         <translation xmi:type="utility:ConstantString" string="CreateReply"/>
       </nodes>
-      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_7" location="755,233" computeExpression="esql://routine/#CollectorFlow_HandleExpired.Main" computeMode="destinationAndMessage">
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_7" location="582,193" computeExpression="esql://routine/#CollectorFlow_HandleExpired.Main" computeMode="destinationAndMessage">
         <translation xmi:type="utility:ConstantString" string="HandleExpired"/>
       </nodes>
-      <nodes xmi:type="ComIbmHTTPAsyncRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_8" location="320,61" asyncResponseCorrelator="One" URLSpecifier="http://localhost:7600/apiv2/applications" httpMethod="GET">
+      <nodes xmi:type="ComIbmHTTPAsyncRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_8" location="260,67" asyncResponseCorrelator="One" URLSpecifier="http://localhost:7600/apiv2/applications" httpMethod="GET">
         <translation xmi:type="utility:ConstantString" string="RequestOne"/>
       </nodes>
-      <nodes xmi:type="ComIbmHTTPAsyncRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_9" location="325,140" asyncResponseCorrelator="Two" URLSpecifier="http://localhost:7600/apiv2/resource-managers" httpMethod="GET">
+      <nodes xmi:type="ComIbmHTTPAsyncRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_9" location="264,143" asyncResponseCorrelator="Two" URLSpecifier="http://localhost:7600/apiv2/resource-managers" httpMethod="GET">
         <translation xmi:type="utility:ConstantString" string="RequestTwo"/>
       </nodes>
-      <nodes xmi:type="ComIbmHTTPAsyncResponse.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_10" location="432,63" asyncRequestCorrelator="One" messageDomainProperty="JSON">
+      <nodes xmi:type="ComIbmHTTPAsyncResponse.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_10" location="368,66" asyncRequestCorrelator="One" messageDomainProperty="JSON">
         <translation xmi:type="utility:ConstantString" string="ReplyOne"/>
       </nodes>
-      <nodes xmi:type="ComIbmHTTPAsyncResponse.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_11" location="437,139" asyncRequestCorrelator="Two" messageDomainProperty="JSON">
+      <nodes xmi:type="ComIbmHTTPAsyncResponse.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_11" location="367,143" asyncRequestCorrelator="Two" messageDomainProperty="JSON">
         <translation xmi:type="utility:ConstantString" string="ReplyTwo"/>
       </nodes>
-      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_14" location="738,317" pattern="EL:&#xD;&#xA;${ExceptionList}">
+      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_14" location="570,258" pattern="EL:&#xD;&#xA;${ExceptionList}">
         <translation xmi:type="utility:ConstantString" string="TraceCatchTerminal"/>
       </nodes>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_5" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="originalMessage"/>

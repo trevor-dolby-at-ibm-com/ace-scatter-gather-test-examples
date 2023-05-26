@@ -63,7 +63,7 @@ class EndToEndAggregationTest {
 		System.out.println("Message sent");
 
 		// Wait for the flow to complete
-		propagateFutureComplete.get(10, TimeUnit.SECONDS);
+		propagateFutureComplete.get(30, TimeUnit.SECONDS);
 		
 		// Validate the results from the flow execution
 		

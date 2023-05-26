@@ -10,31 +10,31 @@
       <nodes xmi:type="ComIbmAggregateControl.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="141,70" aggregateName="singleFlow" timeoutInterval="30" timeoutLocation="$LocalEnvironment/Aggregation/Timeout">
         <translation xmi:type="utility:ConstantString" string="Aggregate Control"/>
       </nodes>
-      <nodes xmi:type="ComIbmAggregateReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="286,262" aggregateName="singleFlow" unsolicitedTimeout="10" transactionMode="true">
+      <nodes xmi:type="ComIbmAggregateReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="187,281" aggregateName="singleFlow" unsolicitedTimeout="10" transactionMode="true">
         <translation xmi:type="utility:ConstantString" string="Aggregate Reply"/>
       </nodes>
-      <nodes xmi:type="ComIbmAggregateRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="691,41" folderName="one">
+      <nodes xmi:type="ComIbmAggregateRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="593,43" folderName="one">
         <translation xmi:type="utility:ConstantString" string="Aggregate Request1"/>
       </nodes>
-      <nodes xmi:type="ComIbmAggregateRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="692,113" folderName="two">
+      <nodes xmi:type="ComIbmAggregateRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="593,111" folderName="two">
         <translation xmi:type="utility:ConstantString" string="Aggregate Request2"/>
       </nodes>
-      <nodes xmi:type="ComIbmWSInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="16,75" URLSpecifier="/aggregationFlow">
+      <nodes xmi:type="ComIbmWSInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="25,74" URLSpecifier="/aggregationFlow">
         <translation xmi:type="utility:ConstantString" string="HTTP Input"/>
       </nodes>
-      <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_6" location="714,263">
+      <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_6" location="590,281">
         <translation xmi:type="utility:ConstantString" string="HTTP Reply"/>
       </nodes>
-      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_7" location="30,218" queueName="GATHER.IN.1" messageDomainProperty="JSON">
+      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_7" location="25,246" queueName="GATHER.IN.1" messageDomainProperty="JSON">
         <translation xmi:type="utility:ConstantString" string="MQ Input1"/>
       </nodes>
-      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_8" location="33,295" queueName="GATHER.IN.2" messageDomainProperty="JSON">
+      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_8" location="24,315" queueName="GATHER.IN.2" messageDomainProperty="JSON">
         <translation xmi:type="utility:ConstantString" string="MQ Input2"/>
       </nodes>
-      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_9" location="516,38" queueName="SCATTER.OUT.1" transactionMode="yes" request="true" replyToQ="GATHER.IN.1">
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_9" location="475,39" queueName="SCATTER.OUT.1" transactionMode="yes" request="true" replyToQ="GATHER.IN.1">
         <translation xmi:type="utility:ConstantString" string="MQ Output1"/>
       </nodes>
-      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_10" location="519,110" queueName="SCATTER.OUT.2" transactionMode="yes" request="true" replyToQ="GATHER.IN.2">
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_10" location="474,107" queueName="SCATTER.OUT.2" transactionMode="yes" request="true" replyToQ="GATHER.IN.2">
         <translation xmi:type="utility:ConstantString" string="MQ Output2"/>
       </nodes>
       <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_11" location="339,38" computeExpression="esql://routine/#AggregationFlow_Compute1.Main">
@@ -43,13 +43,13 @@
       <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_12" location="339,107" computeExpression="esql://routine/#AggregationFlow_Compute2.Main">
         <translation xmi:type="utility:ConstantString" string="Compute2"/>
       </nodes>
-      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_13" location="497,216" computeExpression="esql://routine/#AggregationFlow_Complete.Main" computeMode="destinationAndMessage">
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_13" location="430,281" computeExpression="esql://routine/#AggregationFlow_Complete.Main" computeMode="destinationAndMessage">
         <translation xmi:type="utility:ConstantString" string="Complete"/>
       </nodes>
-      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_14" location="499,302" computeExpression="esql://routine/#AggregationFlow_Complete.Main" computeMode="destinationAndMessage">
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_14" location="431,218" computeExpression="esql://routine/#AggregationFlow_Complete.Main" computeMode="destinationAndMessage">
         <translation xmi:type="utility:ConstantString" string="Timeout"/>
       </nodes>
-      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_15" location="481,373" destination="localError" pattern="ExceptionList:&#xD;&#xA;${ExceptionList}">
+      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_15" location="409,345" destination="localError" pattern="ExceptionList:&#xD;&#xA;${ExceptionList}">
         <translation xmi:type="utility:ConstantString" string="TraceCatchTerminal"/>
       </nodes>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_1" sourceNode="FCMComposite_1_5" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
