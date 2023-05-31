@@ -5,9 +5,7 @@ This repo containes examples for Aggregation and Collector nodes. Groups nodes c
 very similar to the Aggrgeation example except that no queue manager would be needed for the nodes themselves.
 
 The tests are split between "unit tests" and "component tests", with the key distinction between the two being
-that unit tests must run without prereq services (such as MQ or REST APIs). See
-https://community.ibm.com/community/user/integration/blogs/trevor-dolby/2023/03/20/app-connect-enterprise-ace-unit-and-component-test 
-for a fuller description of the differences and reasons for the split.
+that unit tests must run without prereq services (such as MQ or REST APIs). See https://community.ibm.com/community/user/integration/blogs/trevor-dolby/2023/03/20/app-connect-enterprise-ace-unit-and-component-test for a fuller description of the differences and reasons for the split.
 
 ## Prereqs
 
