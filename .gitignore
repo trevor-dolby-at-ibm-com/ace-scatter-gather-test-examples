@@ -21,5 +21,7 @@ ComponentTestServer/run
 
 junit-reports/*
 
+AggregationApplication_ComponentTest/AggregationApplication_ComponentTest.jar
 AggregationApplication_UnitTest/AggregationApplication_UnitTest.jar
+CollectorApplication_ComponentTest/CollectorApplication_ComponentTest.jar
 CollectorApplication_UnitTest/CollectorApplication_UnitTest.jar
