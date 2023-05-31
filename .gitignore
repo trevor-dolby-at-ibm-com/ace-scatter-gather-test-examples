@@ -18,3 +18,8 @@ ComponentTestServer/server.conf.yaml
 ComponentTestServer/console.log
 ComponentTestServer/log
 ComponentTestServer/run
+
+junit-reports/*
+
+AggregationApplication_UnitTest/AggregationApplication_UnitTest.jar
+CollectorApplication_UnitTest/CollectorApplication_UnitTest.jar
