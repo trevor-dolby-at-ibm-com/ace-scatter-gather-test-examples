@@ -5,17 +5,17 @@
 <stringAttribute key="debugPort" value="6010"/>
 <stringAttribute key="mqManagerName" value="ACEv12_QM"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/SingleFlowApplication_Aggregation_ComponentTest"/>
+<listEntry value="/AggregationApplication_ComponentTest"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.junit.CONTAINER" value="=SingleFlowApplication_Aggregation_ComponentTest"/>
+<stringAttribute key="org.eclipse.jdt.junit.CONTAINER" value="=AggregationApplication_ComponentTest"/>
 <booleanAttribute key="org.eclipse.jdt.junit.KEEPRUNNING_ATTR" value="false"/>
 <stringAttribute key="org.eclipse.jdt.junit.TESTNAME" value=""/>
 <stringAttribute key="org.eclipse.jdt.junit.TEST_KIND" value="org.eclipse.jdt.junit.loader.junit5"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value=""/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="SingleFlowApplication_Aggregation_ComponentTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="AggregationApplication_ComponentTest"/>
 <stringAttribute key="serviceTrace" value="none"/>
 <booleanAttribute key="startFlowThreads" value="true"/>
 <booleanAttribute key="useTempWorkingdir" value="false"/>

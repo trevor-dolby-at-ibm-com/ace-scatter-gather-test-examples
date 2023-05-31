@@ -14,7 +14,7 @@ import com.ibm.integration.test.v1.exception.TestException;
 import static com.ibm.integration.test.v1.Matchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class SingleFlowApplication_AggregationFlow_Compute1_0001_Test {
+public class AggregationFlow_Compute1_0001_Test {
 
   /*
    * SingleFlowApplication_AggregationFlow_Compute1_0001_Test
@@ -31,7 +31,7 @@ public class SingleFlowApplication_AggregationFlow_Compute1_0001_Test {
   public void SingleFlowApplication_AggregationFlow_Compute1_TestCase_001() throws TestException {
 
     // Define the SpyObjectReference
-    SpyObjectReference nodeReference = new SpyObjectReference().application("SingleFlowApplication")
+    SpyObjectReference nodeReference = new SpyObjectReference().application("AggregationApplication")
         .messageFlow("AggregationFlow").node("Compute1");
 
     // Initialise a NodeSpy

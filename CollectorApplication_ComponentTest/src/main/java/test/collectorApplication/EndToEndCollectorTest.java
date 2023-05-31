@@ -49,7 +49,7 @@ class EndToEndCollectorTest {
   void withMockAPISuccessTest() throws Exception 
   {
     // Define the SpyObjectReference and NodeSpy objects
-    SpyObjectReference flowRef = new SpyObjectReference().application("SingleFlowApplication").messageFlow("CollectorFlow");
+    SpyObjectReference flowRef = new SpyObjectReference().application("CollectorApplication").messageFlow("CollectorFlow");
     NodeSpy requestOneSpy = new NodeSpy(flowRef.getURI()+"/nodes/RequestOne");
     NodeSpy requestTwoSpy = new NodeSpy(flowRef.getURI()+"/nodes/RequestTwo");
     NodeSpy replyOneSpy = new NodeSpy(flowRef.getURI()+"/nodes/ReplyOne");

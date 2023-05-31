@@ -33,7 +33,7 @@ class EndToEndAggregationTest {
   void storedMessageTest() throws TestException, InterruptedException, ExecutionException, TimeoutException 
   {
     // Define the SpyObjectReference and NodeSpy objects
-    SpyObjectReference flowRef = new SpyObjectReference().application("SingleFlowApplication").messageFlow("AggregationFlow");
+    SpyObjectReference flowRef = new SpyObjectReference().application("AggregationApplication").messageFlow("AggregationFlow");
     NodeSpy httpInputSpy = new NodeSpy(flowRef.getURI()+"/nodes/HTTP%20Input");
     NodeSpy httpReplySpy = new NodeSpy(flowRef.getURI()+"/nodes/HTTP%20Reply");
     NodeSpy completeSpy = new NodeSpy(flowRef.getURI()+"/nodes/Complete");

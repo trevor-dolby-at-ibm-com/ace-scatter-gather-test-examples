@@ -25,7 +25,7 @@ public class AggregationFlow_EndToEndTestWithMocks
   void firstHalfTest() throws TestException, InterruptedException 
   {
     // Define the SpyObjectReference and NodeSpy objects
-    SpyObjectReference flowRef = new SpyObjectReference().application("SingleFlowApplication").messageFlow("AggregationFlow");
+    SpyObjectReference flowRef = new SpyObjectReference().application("AggregationApplication").messageFlow("AggregationFlow");
     NodeSpy httpInputSpy = new NodeSpy(flowRef.getURI()+"/nodes/HTTP%20Input");
     NodeStub aggregateControlStub = new NodeStub(flowRef.getURI()+"/nodes/Aggregate%20Control");
     NodeSpy mqOutput1Spy = new NodeSpy(flowRef.getURI()+"/nodes/MQ%20Output1");
@@ -76,7 +76,7 @@ public class AggregationFlow_EndToEndTestWithMocks
   void secondHalfTest() throws TestException, InterruptedException 
   {
     // Define the SpyObjectReference and NodeSpy objects
-    SpyObjectReference flowRef = new SpyObjectReference().application("SingleFlowApplication").messageFlow("AggregationFlow");
+    SpyObjectReference flowRef = new SpyObjectReference().application("AggregationApplication").messageFlow("AggregationFlow");
     NodeSpy httpReplySpy = new NodeSpy(flowRef.getURI()+"/nodes/HTTP%20Reply");
     NodeSpy aggregateReplySpy = new NodeSpy(flowRef.getURI()+"/nodes/Aggregate%20Reply");
 
