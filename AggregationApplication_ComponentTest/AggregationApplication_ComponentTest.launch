@@ -18,6 +18,6 @@
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="AggregationApplication_ComponentTest"/>
 <stringAttribute key="serviceTrace" value="none"/>
 <booleanAttribute key="startFlowThreads" value="true"/>
-<booleanAttribute key="useTempWorkingdir" value="false"/>
-<stringAttribute key="workingDirectory" value="${workspace_loc:/ComponentTestServer}"/>
+<booleanAttribute key="useTempWorkingdir" value="true"/>
+<stringAttribute key="workingDirectory" value=""/>
 </launchConfiguration>
