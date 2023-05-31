@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="C:\Users\684084897\IBM\ACET12\ace-scatter-gather-test-examples-workspace\GeneratedBarFiles\BackendApplicationproject.generated.bar" deployTimestamp="2023-05-31 17:59:10">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="Flow2" deployBarfile="C:\Users\684084897\IBM\ACET12\ace-scatter-gather-test-examples-workspace\GeneratedBarFiles\BackendApplicationproject.generated.bar" deployTimestamp="2023-05-31 17:59:10">
+    <ConfigurableProperty uri="Flow2#Compute.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#Compute.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#Compute.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.queueName" override="SCATTER.OUT.2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Input.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Reply.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Reply.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Reply.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Reply.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Reply.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Reply.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Reply.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Reply.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Reply.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Reply.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Reply.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#MQ Reply.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow2#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="Flow1" deployBarfile="C:\Users\684084897\IBM\ACET12\ace-scatter-gather-test-examples-workspace\GeneratedBarFiles\BackendApplicationproject.generated.bar" deployTimestamp="2023-05-31 17:59:10">
+    <ConfigurableProperty uri="Flow1#Compute.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#Compute.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#Compute.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.queueName" override="SCATTER.OUT.1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Input.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Reply.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Reply.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Reply.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Reply.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Reply.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Reply.destinationQueueManagerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Reply.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Reply.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Reply.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Reply.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Reply.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#MQ Reply.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Flow1#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>
