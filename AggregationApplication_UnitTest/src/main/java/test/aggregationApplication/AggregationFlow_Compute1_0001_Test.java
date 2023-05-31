@@ -1,4 +1,4 @@
-package test.singleFlowApplication;
+package test.aggregationApplication;
 
 import java.io.InputStream;
 

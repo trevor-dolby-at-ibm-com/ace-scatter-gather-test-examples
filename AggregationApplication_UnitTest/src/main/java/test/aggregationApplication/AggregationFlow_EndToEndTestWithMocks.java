@@ -1,4 +1,4 @@
-package test.singleFlowApplication;
+package test.aggregationApplication;
 
 import static com.ibm.integration.test.v1.Matchers.equalsMessage;
 import static org.hamcrest.MatcherAssert.assertThat;

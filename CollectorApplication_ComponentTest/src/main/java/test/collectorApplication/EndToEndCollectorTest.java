@@ -1,4 +1,4 @@
-package test.singleFlowApplication;
+package test.collectorApplication;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static com.ibm.integration.test.v1.Matchers.*;
