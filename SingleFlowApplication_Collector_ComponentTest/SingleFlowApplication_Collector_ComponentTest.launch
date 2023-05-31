@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><launchConfiguration type="com.ibm.etools.mft.junit.launchConfigurationType">
+<booleanAttribute key="NodeJSDisabled" value="false"/>
+<booleanAttribute key="RestAdminPortDisabled" value="false"/>
+<booleanAttribute key="clearResourcesdeleteWorkDir" value="false"/>
+<stringAttribute key="debugPort" value="6010"/>
+<stringAttribute key="mqManagerName" value="ACEv12_QM"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/SingleFlowApplication_Collector_ComponentTest"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.junit.CONTAINER" value="=SingleFlowApplication_Collector_ComponentTest"/>
+<booleanAttribute key="org.eclipse.jdt.junit.KEEPRUNNING_ATTR" value="false"/>
+<stringAttribute key="org.eclipse.jdt.junit.TESTNAME" value=""/>
+<stringAttribute key="org.eclipse.jdt.junit.TEST_KIND" value="org.eclipse.jdt.junit.loader.junit5"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value=""/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="SingleFlowApplication_Collector_ComponentTest"/>
+<stringAttribute key="serviceTrace" value="none"/>
+<booleanAttribute key="startFlowThreads" value="true"/>
+<booleanAttribute key="useTempWorkingdir" value="false"/>
+<stringAttribute key="workingDirectory" value="${workspace_loc:/ComponentTestServer}"/>
+</launchConfiguration>

@@ -1,1 +1,8 @@
 /bin/
+#/ComponentTestServer/config/common
+#/ComponentTestServer/config/registry
+#/ComponentTestServer/config/components
+#/ComponentTestServer/server.conf.yaml
+/ComponentTestServer/console.log
+/ComponentTestServer/log
+#/ComponentTestServer/run

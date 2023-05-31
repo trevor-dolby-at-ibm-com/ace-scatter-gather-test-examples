@@ -1,10 +1,10 @@
 
 
 CREATE COMPUTE MODULE CollectorFlow_CreateRequestTwo
-	CREATE FUNCTION Main() RETURNS BOOLEAN
-	BEGIN
-		SET OutputRoot.Properties = InputProperties;
-		-- More code needed here for a real request . . .
-		RETURN TRUE;
-	END;
+    CREATE FUNCTION Main() RETURNS BOOLEAN
+    BEGIN
+        SET OutputRoot.Properties = InputProperties;
+        -- More code needed here for a real request . . .
+        RETURN TRUE;
+    END;
 END MODULE;

@@ -1,11 +1,11 @@
 
 
 CREATE COMPUTE MODULE AggregationFlow_Compute2
-	CREATE FUNCTION Main() RETURNS BOOLEAN
-	BEGIN
-		SET OutputRoot.Properties = InputProperties;
-		SET OutputRoot.JSON.Data.message = 'two';
-		SET OutputRoot.JSON.Data.correlation.http = BASE64ENCODE(InputLocalEnvironment.Destination.HTTP.RequestIdentifier);
-		RETURN TRUE;
-	END;
+    CREATE FUNCTION Main() RETURNS BOOLEAN
+    BEGIN
+        SET OutputRoot.Properties = InputProperties;
+        SET OutputRoot.JSON.Data.message = 'two';
+        SET OutputRoot.JSON.Data.correlation.http = BASE64ENCODE(InputLocalEnvironment.Destination.HTTP.RequestIdentifier);
+        RETURN TRUE;
+    END;
 END MODULE;

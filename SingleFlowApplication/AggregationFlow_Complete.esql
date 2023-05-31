@@ -1,18 +1,18 @@
 
 
 CREATE COMPUTE MODULE AggregationFlow_Complete
-	CREATE FUNCTION Main() RETURNS BOOLEAN
-	BEGIN
-		SET OutputRoot.Properties = InputProperties;
-		SET OutputRoot.JSON.Data.reply = 'success';
-		
-		SET OutputLocalEnvironment.Destination.HTTP.RequestIdentifier = BASE64DECODE(InputRoot.ComIbmAggregateReplyBody.one.JSON.Data.correlation.http);
-		
-		IF OutputLocalEnvironment.Destination.HTTP.RequestIdentifier IS NULL THEN 
-			SET OutputLocalEnvironment.Destination.HTTP.RequestIdentifier = BASE64DECODE(InputRoot.ComIbmAggregateReplyBody.two.JSON.Data.correlation.http);
-		END IF;
-		
-		RETURN TRUE;
-	END;
+    CREATE FUNCTION Main() RETURNS BOOLEAN
+    BEGIN
+        SET OutputRoot.Properties = InputProperties;
+        SET OutputRoot.JSON.Data.reply = 'success';
+        
+        SET OutputLocalEnvironment.Destination.HTTP.RequestIdentifier = BASE64DECODE(InputRoot.ComIbmAggregateReplyBody.one.JSON.Data.correlation.http);
+        
+        IF OutputLocalEnvironment.Destination.HTTP.RequestIdentifier IS NULL THEN 
+            SET OutputLocalEnvironment.Destination.HTTP.RequestIdentifier = BASE64DECODE(InputRoot.ComIbmAggregateReplyBody.two.JSON.Data.correlation.http);
+        END IF;
+        
+        RETURN TRUE;
+    END;
 
 END MODULE;
