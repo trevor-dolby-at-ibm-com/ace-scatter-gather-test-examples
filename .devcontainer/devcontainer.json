@@ -1,0 +1,10 @@
+{
+    "name": "ace-scatter-gather-test-examples-devcontainer",
+    "image": "tdolby/experimental:ace-devcontainer-xvnc-12.0.8.0",
+    "containerEnv": {
+        "LICENSE": "accept"
+    },
+    "remoteEnv": {
+        "REMOTE_LICENSE": "accept"
+    }
+}
