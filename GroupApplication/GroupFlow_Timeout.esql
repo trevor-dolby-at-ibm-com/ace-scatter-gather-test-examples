@@ -1,0 +1,11 @@
+
+
+CREATE COMPUTE MODULE GroupFlow_Timeout
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+        SET OutputRoot.Properties = InputProperties;
+        SET OutputRoot.JSON.Data.reply = 'timeout';
+        
+		RETURN TRUE;
+	END;
+END MODULE;

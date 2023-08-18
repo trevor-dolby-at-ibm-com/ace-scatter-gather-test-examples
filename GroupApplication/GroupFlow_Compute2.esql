@@ -1,0 +1,10 @@
+
+
+CREATE COMPUTE MODULE GroupFlow_Compute2
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+        SET OutputRoot.Properties = InputProperties;
+        SET OutputRoot.JSON.Data.message = 'one';
+		RETURN TRUE;
+	END;
+END MODULE;

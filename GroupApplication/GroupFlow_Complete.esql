@@ -1,0 +1,11 @@
+
+
+CREATE COMPUTE MODULE GroupFlow_Complete
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+        SET OutputRoot.Properties = InputProperties;
+        SET OutputRoot.JSON.Data.reply = 'success';
+		RETURN TRUE;
+	END;
+
+END MODULE;
