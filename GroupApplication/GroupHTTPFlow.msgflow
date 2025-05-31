@@ -16,16 +16,16 @@
       <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_6" location="394,38" computeExpression="esql://routine/#GroupFlow_Compute1.Main">
         <translation xmi:type="utility:ConstantString" string="Compute1"/>
       </nodes>
-      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_10" location="607,357" computeExpression="esql://routine/#GroupFlow_Timeout.Main">
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_10" location="598,295" computeExpression="esql://routine/#GroupFlow_Timeout.Main">
         <translation xmi:type="utility:ConstantString" string="Timeout"/>
       </nodes>
-      <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_11" location="757,427">
+      <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_11" location="750,395">
         <translation xmi:type="utility:ConstantString" string="HTTP Reply"/>
       </nodes>
-      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_12" location="606,427" computeExpression="esql://routine/#GroupFlow_Complete.Main">
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_12" location="596,393" computeExpression="esql://routine/#GroupFlow_Complete.Main">
         <translation xmi:type="utility:ConstantString" string="Complete"/>
       </nodes>
-      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_13" location="490,491" destination="localError" pattern="ExceptionList:&#xD;&#xA;${ExceptionList}">
+      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_13" location="483,475" destination="localError" pattern="ExceptionList:&#xD;&#xA;${ExceptionList}">
         <translation xmi:type="utility:ConstantString" string="TraceCatchTerminal"/>
       </nodes>
       <nodes xmi:type="ComIbmGroupScatter.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_16" location="174,73" GroupName="demoHTTPGroup" GroupTimeout="5.0">
@@ -34,16 +34,16 @@
       <nodes xmi:type="ComIbmGroupGather.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_17" location="245,281" GroupName="demoHTTPGroup" UnknownMessageTimeout="5.0">
         <translation xmi:type="utility:ConstantString" string="Group Gather"/>
       </nodes>
-      <nodes xmi:type="ComIbmGroupComplete.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_18" location="258,426" GroupName="demoHTTPGroup">
+      <nodes xmi:type="ComIbmGroupComplete.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_18" location="216,428" GroupName="demoHTTPGroup">
         <translation xmi:type="utility:ConstantString" string="Group Complete"/>
       </nodes>
       <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_19" location="380,290" destination="localError" pattern="LE:&#xD;&#xA;${LocalEnvironment}&#xD;&#xA;Root:&#xD;&#xA;${Root}">
         <translation xmi:type="utility:ConstantString" string="TraceUnknown"/>
       </nodes>
-      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_20" location="481,561" destination="localError" pattern="LE:&#xD;&#xA;${LocalEnvironment}&#xD;&#xA;Root:&#xD;&#xA;${Root}">
+      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_20" location="466,554" destination="localError" pattern="LE:&#xD;&#xA;${LocalEnvironment}&#xD;&#xA;Root:&#xD;&#xA;${Root}">
         <translation xmi:type="utility:ConstantString" string="TraceUnknownTerminal"/>
       </nodes>
-      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_21" location="502,427" destination="localError" pattern="Env:&#xD;&#xA;${Environment}&#xD;&#xA;LE:&#xD;&#xA;${LocalEnvironment}&#xD;&#xA;Root:&#xD;&#xA;${Root}">
+      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_21" location="460,394" destination="localError" pattern="Env:&#xD;&#xA;${Environment}&#xD;&#xA;LE:&#xD;&#xA;${LocalEnvironment}&#xD;&#xA;Root:&#xD;&#xA;${Root}">
         <translation xmi:type="utility:ConstantString" string="TraceComplete"/>
       </nodes>
       <nodes xmi:type="ComIbmHTTPAsyncRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="520,40" asyncResponseCorrelator="GroupOne" URLSpecifier="http://localhost:7600/apiv2/applications" httpMethod="GET" AddRequestToGroup="true" GroupRequestFolderName="One" GroupRequestTimeout="5.0">
