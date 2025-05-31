@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmCompute.msgnode="ComIbmCompute.msgnode" xmlns:ComIbmGroupComplete.msgnode="ComIbmGroupComplete.msgnode" xmlns:ComIbmGroupGather.msgnode="ComIbmGroupGather.msgnode" xmlns:ComIbmGroupScatter.msgnode="ComIbmGroupScatter.msgnode" xmlns:ComIbmHTTPAsyncRequest.msgnode="ComIbmHTTPAsyncRequest.msgnode" xmlns:ComIbmHTTPAsyncResponse.msgnode="ComIbmHTTPAsyncResponse.msgnode" xmlns:ComIbmTrace.msgnode="ComIbmTrace.msgnode" xmlns:ComIbmWSInput.msgnode="ComIbmWSInput.msgnode"
+    xmlns:ComIbmWSReply.msgnode="ComIbmWSReply.msgnode" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="GroupHTTPFlow.msgflow" nsPrefix="GroupHTTPFlow.msgflow">
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1" nodeLayoutStyle="SQUARE">
+    <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+    <translation xmi:type="utility:TranslatableString" key="GroupHTTPFlow" bundleName="GroupHTTPFlow" pluginId="GroupApplication"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/GroupApplication/icons/full/obj16/GroupHTTPFlow.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/GroupApplication/icons/full/obj30/GroupHTTPFlow.gif"/>
+    <composition>
+      <nodes xmi:type="ComIbmWSInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="26,77" URLSpecifier="/groupHTTPFlow">
+        <translation xmi:type="utility:ConstantString" string="HTTP Input"/>
+      </nodes>
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="394,107" computeExpression="esql://routine/#GroupFlow_Compute2.Main">
+        <translation xmi:type="utility:ConstantString" string="Compute2"/>
+      </nodes>
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_6" location="394,38" computeExpression="esql://routine/#GroupFlow_Compute1.Main">
+        <translation xmi:type="utility:ConstantString" string="Compute1"/>
+      </nodes>
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_10" location="607,357" computeExpression="esql://routine/#GroupFlow_Timeout.Main">
+        <translation xmi:type="utility:ConstantString" string="Timeout"/>
+      </nodes>
+      <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_11" location="757,427">
+        <translation xmi:type="utility:ConstantString" string="HTTP Reply"/>
+      </nodes>
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_12" location="606,427" computeExpression="esql://routine/#GroupFlow_Complete.Main">
+        <translation xmi:type="utility:ConstantString" string="Complete"/>
+      </nodes>
+      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_13" location="490,491" destination="localError" pattern="ExceptionList:&#xD;&#xA;${ExceptionList}">
+        <translation xmi:type="utility:ConstantString" string="TraceCatchTerminal"/>
+      </nodes>
+      <nodes xmi:type="ComIbmGroupScatter.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_16" location="174,73" GroupName="demoHTTPGroup" GroupTimeout="5.0">
+        <translation xmi:type="utility:ConstantString" string="Group Scatter"/>
+      </nodes>
+      <nodes xmi:type="ComIbmGroupGather.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_17" location="245,281" GroupName="demoHTTPGroup" UnknownMessageTimeout="5.0">
+        <translation xmi:type="utility:ConstantString" string="Group Gather"/>
+      </nodes>
+      <nodes xmi:type="ComIbmGroupComplete.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_18" location="258,426" GroupName="demoHTTPGroup">
+        <translation xmi:type="utility:ConstantString" string="Group Complete"/>
+      </nodes>
+      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_19" location="380,290" destination="localError" pattern="LE:&#xD;&#xA;${LocalEnvironment}&#xD;&#xA;Root:&#xD;&#xA;${Root}">
+        <translation xmi:type="utility:ConstantString" string="TraceUnknown"/>
+      </nodes>
+      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_20" location="481,561" destination="localError" pattern="LE:&#xD;&#xA;${LocalEnvironment}&#xD;&#xA;Root:&#xD;&#xA;${Root}">
+        <translation xmi:type="utility:ConstantString" string="TraceUnknownTerminal"/>
+      </nodes>
+      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_21" location="502,427" destination="localError" pattern="Env:&#xD;&#xA;${Environment}&#xD;&#xA;LE:&#xD;&#xA;${LocalEnvironment}&#xD;&#xA;Root:&#xD;&#xA;${Root}">
+        <translation xmi:type="utility:ConstantString" string="TraceComplete"/>
+      </nodes>
+      <nodes xmi:type="ComIbmHTTPAsyncRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="520,40" asyncResponseCorrelator="GroupOne" URLSpecifier="http://localhost:7600/apiv2/applications" httpMethod="GET" AddRequestToGroup="true" GroupRequestFolderName="One" GroupRequestTimeout="5.0">
+        <translation xmi:type="utility:ConstantString" string="HTTP Async Request1"/>
+      </nodes>
+      <nodes xmi:type="ComIbmHTTPAsyncRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="520,108" asyncResponseCorrelator="GroupTwo" URLSpecifier="http://localhost:7600/apiv2/resource-managers" httpMethod="GET" AddRequestToGroup="true" GroupRequestFolderName="Two" GroupRequestTimeout="5.0">
+        <translation xmi:type="utility:ConstantString" string="HTTP Async Request2"/>
+      </nodes>
+      <nodes xmi:type="ComIbmHTTPAsyncResponse.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="21,240" asyncRequestCorrelator="GroupOne">
+        <translation xmi:type="utility:ConstantString" string="HTTP Async Response1"/>
+      </nodes>
+      <nodes xmi:type="ComIbmHTTPAsyncResponse.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_7" location="21,330" asyncRequestCorrelator="GroupTwo">
+        <translation xmi:type="utility:ConstantString" string="HTTP Async Response2"/>
+      </nodes>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_5" targetNode="FCMComposite_1_11" sourceNode="FCMComposite_1_10" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_6" targetNode="FCMComposite_1_11" sourceNode="FCMComposite_1_12" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_9" targetNode="FCMComposite_1_19" sourceNode="FCMComposite_1_17" sourceTerminalName="OutTerminal.unknown" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_10" targetNode="FCMComposite_1_16" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_11" targetNode="FCMComposite_1_10" sourceNode="FCMComposite_1_18" sourceTerminalName="OutTerminal.timeout" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_12" targetNode="FCMComposite_1_20" sourceNode="FCMComposite_1_18" sourceTerminalName="OutTerminal.unknown" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_13" targetNode="FCMComposite_1_13" sourceNode="FCMComposite_1_18" sourceTerminalName="OutTerminal.catch" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_15" targetNode="FCMComposite_1_6" sourceNode="FCMComposite_1_16" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_16" targetNode="FCMComposite_1_4" sourceNode="FCMComposite_1_16" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_17" targetNode="FCMComposite_1_21" sourceNode="FCMComposite_1_18" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_18" targetNode="FCMComposite_1_12" sourceNode="FCMComposite_1_21" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_6" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="FCMComposite_1_17" sourceNode="FCMComposite_1_5" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_4" targetNode="FCMComposite_1_17" sourceNode="FCMComposite_1_7" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+    </composition>
+    <propertyOrganizer/>
+    <stickyBoard/>
+  </eClassifiers>
+</ecore:EPackage>

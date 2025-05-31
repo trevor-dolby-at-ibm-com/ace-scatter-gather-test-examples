@@ -2,6 +2,9 @@
 <booleanAttribute key="NodeJSDisabled" value="true"/>
 <booleanAttribute key="RestAdminPortDisabled" value="true"/>
 <booleanAttribute key="clearResourcesdeleteWorkDir" value="false"/>
+<stringAttribute key="com.ibm.debug.wsa.attr_vm_name" value="IBM J9 VM"/>
+<stringAttribute key="com.ibm.debug.wsa.attr_vm_version" value="1.8.0_331"/>
+<intAttribute key="com.ibm.debug.wsa.attr_was_version" value="61"/>
 <stringAttribute key="debugPort" value="6010"/>
 <stringAttribute key="mqManagerName" value="ACEv12_QM"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
